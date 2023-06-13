@@ -17,13 +17,16 @@
     4. 냉각 같은 기능이 필요한 경우 컨테이너에 내장할 수 있음
 
 - 왜 도커가 필요할까?
-  - (Different Developement & Production Envs) 로컬 환경이나 개발 환경에서 개발을 완료한 애플리케이션이 호스팅되는 프로덕션 환경을 같은 환경으로 맞추면 개발 환경과 프로덕션 환경이 달라서 발생하는 잠재적인 문제를 아예 예방할 수 있음
-  - (Different Development Envs Within a Team / Company) 프로덕션 환경 뿐만 아니라, 개발 환경이 달라서 발생하는 문제도 예방할 수 있음 ex) 같은 회사, 같은 프로젝트에서 일하는 사람들의 개발 환경
-  - (Clashing Tools / Versions Between Different Projects) 프로젝트 A와 프로젝트 B에서 같은 툴의 다른 버전을 사용할 때 발생하는 문제도 예방할 수 있음
+  - Different Developement & Production Envs
+    - 로컬 환경이나 개발 환경에서 개발을 완료한 애플리케이션이 호스팅되는 프로덕션 환경을 같은 환경으로 맞추면 개발 환경과 프로덕션 환경이 달라서 발생하는 잠재적인 문제를 아예 예방할 수 있음
+  - Different Development Envs Within a Team / Company
+    - 프로덕션 환경 뿐만 아니라, 개발 환경이 달라서 발생하는 문제도 예방할 수 있음 ex) 같은 회사, 같은 프로젝트에서 일하는 사람들의 개발 환경
+  - Clashing Tools / Versions Between Different Projects
+    - 프로젝트 A와 프로젝트 B에서 같은 툴의 다른 버전을 사용할 때 발생하는 문제도 예방할 수 있음
 
 - VM vs Docker Container
   - 공간과 리소스(CPU, Memory, HDD) 많이 사용한다 vs 공간과 리소스 적게 사용한다
-  - 공유가 쉽다 vs 공유가 (가능하지만) 어렵다
+  - 공유가 (가능하지만) 어렵다 vs 공유가 쉽다
   - 느리다 vs 빠르다
   - 무겁다 vs 가볍다
   - 크다 vs 작다
@@ -44,6 +47,14 @@
 - Docker Compose
 - k8s
 
-1. docker build
-2. docker run -p 3000:3000 {docker-image-id}
-3. docker stop {docker-ps-name}
+1. docker build .
+2. docker images
+3. docker run -p 3000:3000 {docker-image-id}
+4. docker ps
+5. docker stop {docker-ps-name}
+
+6. Watch the videos at your pace
+7. Code along
+8. Repeat
+9. Google, Stackflow
+10. Ask & Answer
